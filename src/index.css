@@ -1,13 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.menu-card{
+    @apply flex flex-col justify-center items-center bg-white h-screen font-mono py-40;
+}
+.menu-content{
+    @apply flex flex-col justify-center items-center;
+}
+.hero{
+    background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1)),  url('./img/egg.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* @apply  bg-gradient-to-r from-yellow-100 via-red-50 to-pink-50; */
 }
